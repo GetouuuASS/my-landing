@@ -27,7 +27,7 @@ section {
     z-index: 1000;
 }
 #about {
-    padding-top: 100px;
+    padding-top: 130px;
 }
 .header a {
     margin-left: 15px;
@@ -132,10 +132,28 @@ h1 {
 @media screen and (max-width: 600px) {
     .header {
         flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+    .header nav {
+        display: flex;
         gap: 15px;
+    }
+    .header a {
+        margin-left: 0;
+        font-size: 14px;
+    }
+    #about {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 160px;
     }
     .cards-container {
         flex-direction: column;
         align-items: center;
+    }
+    .card {
+        width: 90%;
     }
 }
